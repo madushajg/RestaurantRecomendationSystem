@@ -81,14 +81,12 @@ with open('binarized_zomato.csv', 'w') as csvfile:
             Votes = row[16]
 
             binaries = []
-            count = 0
             for cuisine in cuisinesUnique:
                 if str(row[17]).lstrip() == cuisine or str(row[18]).lstrip() == cuisine or str(row[19]).lstrip() == cuisine or str(row[20]).lstrip() == cuisine or str(row[21]).lstrip() == cuisine \
                         or str(row[22]).lstrip() == cuisine or str(row[23]).lstrip() == cuisine or str(row[24]).lstrip() == cuisine:
                     binaries.append(1)
                 else:
                     binaries.append(0)
-                count = count + 1
 
             currentRow = [Restaurant_ID, Restaurant_Name, Country_Code, City, Longitude, Latitude,
                  AvgCost, Currency, TableBooking, OnlineDelivery, DelNow, SwtchOrderMenu, PriceRng, AvgRating,

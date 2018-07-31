@@ -2,10 +2,19 @@ import numpy as np
 from sklearn import preprocessing, model_selection, neighbors
 import pandas as pd
 
-df = pd.read_csv('filtered_zomato.csv')
+df = pd.read_csv('binarized_zomato.csv')
 
 df.replace('?',-99999, inplace=True)
 df.drop(['Restaurant ID'], 1, inplace=True)
+df.drop(['Restaurant Name'], 1, inplace=True)
+df.drop(['Country Code'], 1, inplace=True)
+df.drop(['City'], 1, inplace=True)
+df.drop(['Longitude'], 1, inplace=True)
+df.drop(['Latitude'], 1, inplace=True)
+df.drop(['Average Cost for two'], 1, inplace=True)
+df.drop(['Currency'], 1, inplace=True)
+df.drop(['Aggregate rating'], 1, inplace=True)
+df.drop(['Rating color'], 1, inplace=True)
 
 Array = df.values
 
