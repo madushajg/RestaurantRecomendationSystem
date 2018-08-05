@@ -22,9 +22,11 @@ df = pd.read_csv('binarized_zomato.csv')
 df.replace('?', -99999, inplace=True)
 restaurants = df['RestaurantName']
 cities = df['City']
+countries = df['CountryCode']
 
 restaurants_arr = restaurants.values
 cities_arr = cities.values
+countrries_arr = countries.values
 
 df.drop(['RestaurantID'], 1, inplace=True)
 df.drop(['RestaurantName'], 1, inplace=True)
@@ -83,64 +85,10 @@ new = X[-1]
 # remove the new data point from the numpy arrays before dividing into test and training sets and  running it against the classifier
 X = X[:-1, :]
 y = y[:-1]
-# divide dataset into train and test sets in 7 : 3 ratio
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
-# print(len(y))
-
-# derive the culsters
-n_clusters = 5    # len(np.unique(y_train))
-clu = KMeans(n_clusters=n_clusters, random_state=42)
-clu.fit(X_train)
-y_labels_train = clu.labels_
-y_labels_test = clu.predict(X_test)
-
-
-predict = []
-predict.append(new)
-
-# train the dataset using a classification algorithm by using the clusters derived above as the traget class/ output column
-clf = svm.SVC()
-clf.fit(X_train, y_labels_train)
-
-# predict the target class / output of the new user's datapoint
-prediction = clf.predict(predict)
-predict_class = prediction[0]
-s = new.size
-prediction_np = np.array(prediction)
-
-accuracy = clf.score(X_test, y_labels_test)
-
-labels_train = np.zeros(shape=(1, len(y_labels_train)))
-labels_train[0] = y_labels_train
-
-labels_test = np.zeros(shape=(1, len(y_labels_test)))
-labels_test[0] = y_labels_test
-
-# add the clusters' columns to the training and test sets
-X_train = np.concatenate((X_train, labels_train.T), axis=1)
-X_test = np.concatenate((X_test, labels_test.T), axis=1)
-
-# filter out the training and test sets for datapoints that beong to the same cluster/class as the new user input datapoint
-filtered_train = []
-for item in X_train:
-    if item[-1] == predict_class:
-        filtered_train.append(item)
-
-filtered_test = []
-for item in X_test:
-    if item[-1] == predict_class:
-        filtered_test.append(item)
-
-# COLLABORATIVE FILTERING - item-to-item
-filtered_train = np.array(filtered_train)
-filtered_test = np.array(filtered_test)
-
-filtered_train = np.delete(filtered_train, -1, axis=1)
-filtered_test = np.delete(filtered_test, -1, axis=1)
-
-# user_input = np.concatenate((new, prediction_np.T), axis=0)
 user_input = np.reshape(new, (1, -1))
+restaurants_arr = np.reshape(restaurants_arr, (-1, 1))
+cities_arr = np.reshape(cities_arr, (-1, 1))
 # similarities_train = pairwise_distances(filtered_train, user_input, metric='cosine')
 # similarities_test = pairwise_distances(filtered_test, user_input, metric='cosine')
 
@@ -150,7 +98,21 @@ similarities = pairwise_distances(X, user_input, metric='cosine')
 
 # print(predict_class)
 # print(filtered_test)
-print(similarities.size)
+# print(similarities.shape)
+
+final = np.concatenate((restaurants_arr, cities_arr), axis=1)
+final = np.concatenate((final, similarities), axis=1)
+# print(final[0][2])
+
+minimum = final[0][2]
+rest = final[0][0]
+
+for item in final:
+    if item[2] < minimum:
+        minimum = item[2]
+        rest = item[0]
+
+print(rest)
 # filtered_train = np.array(filtered_train)
 
 exit()
