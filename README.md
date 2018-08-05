@@ -1,4 +1,4 @@
-# RestaurantRecomendationSystem-
+# RestaurantRecomendationSystem
 
 In this machine learining project, We have to use the free data set collected by Zomato, the restaurant review platform which contains data from a number of restaurants around the world. We propose an analysis where we analyze the cuisine types  (eg: Chinese, Thai, Indian, Western etc.) and the costs in each country/region and the classifier learns the the trends in each of the countries/regions. Then depending on the user's travel destinations, cuisine type preference and the budget that he/she can afford, we propose to recommend the restaurants that best suits the user at that location.
 
