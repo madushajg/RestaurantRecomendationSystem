@@ -20,7 +20,7 @@ for item in a:
 # drop unnecessary columns
 df = pd.read_csv('binarized_zomato.csv')
 df.replace('?', -99999, inplace=True)
-git 
+git
 restaurants = df['RestaurantName']
 cities = df['City']
 
