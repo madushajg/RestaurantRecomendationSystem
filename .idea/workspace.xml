@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c579356-5855-4a3b-accd-a9220fc86314" name="Default" comment="">
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+      <change afterPath="$PROJECT_DIR$/Collaborative_Zomato.py" afterDir="false" />
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.~lock.binarized_zomato.csv#" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Culster_Zomato.py" beforeDir="false" afterPath="$PROJECT_DIR$/Culster_Zomato.py" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/example_inputs" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Culster_Zomato.py" beforeDir="false" afterPath="$PROJECT_DIR$/Culster_Zomato.py" afterDir="false" />
+>>>>>>> Stashed changes
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,14 +82,54 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="660365646">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gitignore" value="1" />
+          <entry key="py" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="41" />
+          <entry key="gitignore" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="Python" value="41" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Binarize.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="1305">
               <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+=======
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -85,8 +140,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classify.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="45">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="75">
+              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+=======
+            <state relative-caret-position="64">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+>>>>>>> Stashed changes
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -97,8 +162,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Culster_Zomato.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="266">
               <caret line="206" column="41" selection-start-line="206" selection-start-column="41" selection-end-line="206" selection-end-column="41" />
+=======
+<<<<<<< Updated upstream
+            <state relative-caret-position="285">
+              <caret line="121" column="56" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="56" />
+=======
+            <state relative-caret-position="-1664">
+              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+>>>>>>> Stashed changes
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -106,6 +181,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cluster.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,6 +199,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1200">
               <caret line="85" column="13" lean-forward="true" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+=======
+      <file pinned="false" current-in-tab="true">
+<<<<<<< Updated upstream
+        <entry file="file://$PROJECT_DIR$/Collaborative_Zomato.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+=======
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cluster.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+>>>>>>> Stashed changes
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -159,8 +267,17 @@
         <option value="$PROJECT_DIR$/Cluster.py" />
         <option value="$PROJECT_DIR$/Classify.py" />
         <option value="$PROJECT_DIR$/Test.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Collaborative_Zomato.py" />
         <option value="$PROJECT_DIR$/Culster_Zomato.py" />
+=======
+        <option value="$PROJECT_DIR$/Culster_Zomato.py" />
+<<<<<<< Updated upstream
+        <option value="$PROJECT_DIR$/Collaborative_Zomato.py" />
+=======
+        <option value="$PROJECT_DIR$/.gitignore" />
+>>>>>>> Stashed changes
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
       </list>
     </option>
   </component>
@@ -181,11 +298,24 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RestaurantRecomendationSystem-" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestaurantRecomendationSystem-" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -368,10 +498,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1017" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22526042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22785486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -383,10 +513,14 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32972974" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3295711" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50065106" side_tool="true" weight="0.3287483" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32972974" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.49405405" />
+=======
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.55191875" />
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3287483" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -394,6 +528,8 @@
       <window_info anchor="right" id="Database" order="3" weight="0.32982844" />
       <window_info anchor="right" id="SciView" order="4" weight="0.32982844" />
       <window_info anchor="right" x="0" y="0" width="337" height="640" id="Documentation" order="5" side_tool="true" visible="true" weight="0.14453125" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,6 +561,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -436,13 +573,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="111" column="13" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="71" column="41" selection-start-line="71" selection-start-column="41" selection-end-line="71" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Binarize.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1305">
           <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+=======
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -451,8 +602,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Classify.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="45">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
+=======
+<<<<<<< Updated upstream
+        <state relative-caret-position="75">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+=======
+        <state relative-caret-position="64">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+>>>>>>> Stashed changes
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -461,11 +622,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cluster.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="1995">
           <caret line="142" column="77" lean-forward="true" selection-start-line="142" selection-start-column="77" selection-end-line="142" selection-end-column="77" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+=======
+<<<<<<< Updated upstream
+        <state relative-caret-position="120">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
         </state>
       </provider>
     </entry>
@@ -476,6 +643,10 @@
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -488,11 +659,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Culster_Zomato.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="266">
           <caret line="206" column="41" selection-start-line="206" selection-start-column="41" selection-end-line="206" selection-end-column="41" />
+=======
+<<<<<<< Updated upstream
+        <state relative-caret-position="479">
+          <caret line="114" column="10" selection-start-line="114" selection-start-column="10" selection-end-line="114" selection-end-column="10" />
+=======
+        <state relative-caret-position="-1664">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+>>>>>>> Stashed changes
+>>>>>>> 691111e055612d2da285a36edc887f5074ad7abd
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
         </state>
       </provider>
     </entry>
