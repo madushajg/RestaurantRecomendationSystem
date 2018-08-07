@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as pyt
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
-from sklearn.cluster import AgglomerativeClustering
+from sklearn.cluster import SpectralClustering
 from xgboost import XGBClassifier
 from sklearn.metrics.pairwise import pairwise_distances
 
@@ -102,7 +102,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 
 # derive the culsters
 n_clusters = 3    # len(np.unique(y_train))
-clu = AgglomerativeClustering(n_clusters=n_clusters)
+clu = SpectralClustering(n_clusters=n_clusters, n_jobs=-1)
 clu.fit(X_train[:, 2:])
 y_labels_train = clu.labels_
 y_labels_test = clu.fit_predict(X_test[:, 2:])
