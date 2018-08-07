@@ -121,6 +121,7 @@ predict_class = prediction[0]
 s = new.size
 prediction_np = np.array(prediction)
 accuracy = clf.score(X_test[:, 2:], y_labels_test)
+print("Accuracy: %.2f%%" % (accuracy * 100.0))
 
 labels_train = np.zeros(shape=(1, len(y_labels_train)))
 labels_train[0] = y_labels_train
