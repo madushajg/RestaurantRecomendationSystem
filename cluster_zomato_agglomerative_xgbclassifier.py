@@ -2,8 +2,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as pyt
 from sklearn.model_selection import train_test_split
-from sklearn import svm, preprocessing
-from sklearn.cluster import KMeans
+from sklearn import preprocessing
+from sklearn.cluster import AgglomerativeClustering
+from xgboost import XGBClassifier
 from sklearn.metrics.pairwise import pairwise_distances
 
 # Get user input for HasTablebooking, HasOnlinedelivery, Isdeliveringnow, Switchtoordermenu, Pricerange, Aggregaterating and cuisine preference. Refer example_user_inputs for samples.
@@ -93,18 +94,18 @@ new = X[-1]
 X = X[:-1, :]
 y = y[:-1]
 # divide dataset into train and test sets in 7 : 3 ratio
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 # print(X_train[:, 2:])
 # # print(len(y))
 # print(X_train)
 
 # derive the culsters
-n_clusters = 5    # len(np.unique(y_train))
-clu = KMeans(n_clusters=n_clusters, random_state=42)
+n_clusters = 3    # len(np.unique(y_train))
+clu = AgglomerativeClustering(n_clusters=n_clusters)
 clu.fit(X_train[:, 2:])
 y_labels_train = clu.labels_
-y_labels_test = clu.predict(X_test[:, 2:])
+y_labels_test = clu.fit_predict(X_test[:, 2:])
 
 
 predict = []
@@ -112,8 +113,9 @@ predict.append(new)
 predict = np.array(predict)
 
 # train the dataset using a classification algorithm by using the clusters derived above as the traget class/ output column
-clf = svm.SVC()
+clf = XGBClassifier(n_jobs=-1)
 clf.fit(X_train[:, 2:], y_labels_train)
+print(clf)
 
 # predict the target class / output of the new user's datapoint
 prediction = clf.predict(predict[:, 2:])

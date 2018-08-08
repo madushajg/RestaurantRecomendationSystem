@@ -2,8 +2,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as pyt
 from sklearn.model_selection import train_test_split
-from sklearn import svm, preprocessing
+from sklearn import preprocessing
 from sklearn.cluster import KMeans
+from xgboost import XGBClassifier
 from sklearn.metrics.pairwise import pairwise_distances
 
 # Get user input for HasTablebooking, HasOnlinedelivery, Isdeliveringnow, Switchtoordermenu, Pricerange, Aggregaterating and cuisine preference. Refer example_user_inputs for samples.
@@ -101,7 +102,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
 # derive the culsters
 n_clusters = 5    # len(np.unique(y_train))
-clu = KMeans(n_clusters=n_clusters, random_state=42)
+clu = KMeans(n_clusters=n_clusters, random_state=42, n_jobs=-1)
 clu.fit(X_train[:, 2:])
 y_labels_train = clu.labels_
 y_labels_test = clu.predict(X_test[:, 2:])
@@ -112,8 +113,9 @@ predict.append(new)
 predict = np.array(predict)
 
 # train the dataset using a classification algorithm by using the clusters derived above as the traget class/ output column
-clf = svm.SVC()
+clf = XGBClassifier(n_jobs=-1)
 clf.fit(X_train[:, 2:], y_labels_train)
+print(clf)
 
 # predict the target class / output of the new user's datapoint
 prediction = clf.predict(predict[:, 2:])
