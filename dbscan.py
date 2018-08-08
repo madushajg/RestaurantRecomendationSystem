@@ -82,25 +82,17 @@ X = df.values
 y = df['Aggregaterating'].values
 new = X[-1]
 
-# # remove the new data point from the numpy arrays before dividing into test and training sets and  running it against the classifier
+# remove the new data point from the numpy arrays before dividing into test and training sets and  running it against the classifier
 X = X[:-1, :]
 y = y[:-1]
 # divide dataset into train and test sets in 7 : 3 ratio
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
 
-# print(X_train[:, 2:])
-# print(X_train)
+
 
 # derive the culsters
 
-# n_clusters = 5  # len(np.unique(y_train))
-# clu = KMeans(n_clusters=n_clusters, random_state=42)
-# clu.fit(X_train[:, 2:])
-# y_labels_train = clu.labels_
-#
-# y_labels_test = clu.predict(X_test[:, 2:])
-
-dbsc = DBSCAN(eps=0.8, min_samples=20).fit(X_train[:, 2:])
+dbsc = DBSCAN(eps=0.5, min_samples=50).fit(X_train[:, 2:])
 y_labels_train = dbsc.labels_
 y_labels_test = dbsc.fit_predict(X_test[:, 2:])
 
@@ -158,26 +150,20 @@ filtered_test = np.delete(filtered_test, -1, axis=1)
 user_input = np.concatenate((new, prediction_np.T), axis=0)
 user_input = np.reshape(new, (1, -1))
 # print(filtered_test.shape)
-similarities_train = pairwise_distances(filtered_train[:, 2:], user_input[:, 2:], metric='cosine')
-similarities_test = pairwise_distances(filtered_test[:, 2:], user_input[:, 2:], metric='cosine')
+similarities_train = pairwise_distances(filtered_train[:, 2:], user_input[:, 2:], metric='manhattan')
+similarities_test = pairwise_distances(filtered_test[:, 2:], user_input[:, 2:], metric='manhattan')
 # print(labels_train.T.shape)
 
 filtered_train = np.concatenate((filtered_train, similarities_train), axis=1)
 filtered_test = np.concatenate((filtered_test, similarities_test), axis=1)
 
-# X_reshape = np.reshape(X, (X.shape[1], X.shape[0]))
-# filtered_train = np.reshape(filtered_train, (filtered_train.shape[1], filtered_train.shape[0]))
-# filtered_test = np.reshape(filtered_test, (filtered_test.shape[1], filtered_test.shape[0]))
-# filtered_train = np.reshape(filtered_train, (152, 9534))
-# print(X_reshape.shape)
+
 label_dictionary = np.array(label_dictionary)
 # Convert preprocessed dataset back to the original data valuesfiltered_train[n][i]
 
 filtered_train = filtered_train.astype('object')
 filtered_test = filtered_test.astype('object')
 
-# for n, j in enumerate(filtered_train):
-#     print(n)
 
 for i in range(0, 6):
     for n, j in enumerate(filtered_train):
