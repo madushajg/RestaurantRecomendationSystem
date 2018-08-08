@@ -104,15 +104,18 @@ final = np.concatenate((restaurants_arr, cities_arr), axis=1)
 final = np.concatenate((final, similarities), axis=1)
 # print(final[0][2])
 
-minimum = final[0][2]
+maximum = final[0][2]
 rest = final[0][0]
 
 for item in final:
-    if item[2] < minimum:
-        minimum = item[2]
+    if item[2] > maximum:
+        maximum = item[2]
         rest = item[0]
+        city =
 
-print(rest)
+# print(rest)
 # filtered_train = np.array(filtered_train)
+s = "Restaurant" + rest + " - " + citi + ""
+print(len(cities_arr))
 
 exit()
