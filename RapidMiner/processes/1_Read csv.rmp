@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="8.2.001">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="8.2.001" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="8.2.001" expanded="true" height="68" name="Read CSV" width="90" x="45" y="136">
+        <parameter key="csv_file" value="D:\Dinusha\Lectures\Data mining\Project\Git\RestaurantRecomendationSystem-\binarized_zomato.csv"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="false"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="first_row_as_names" value="false"/>
+        <list key="annotations">
+          <parameter key="0" value="Name"/>
+        </list>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="RestaurantID.true.integer.attribute"/>
+          <parameter key="1" value="RestaurantName.true.polynominal.attribute"/>
+          <parameter key="2" value="CountryCode.true.integer.attribute"/>
+          <parameter key="3" value="City.true.polynominal.attribute"/>
+          <parameter key="4" value="Longitude.true.real.attribute"/>
+          <parameter key="5" value="Latitude.true.real.attribute"/>
+          <parameter key="6" value="AverageCostfortwo.true.integer.attribute"/>
+          <parameter key="7" value="Currency.true.polynominal.attribute"/>
+          <parameter key="8" value="HasTablebooking.true.binominal.attribute"/>
+          <parameter key="9" value="HasOnlinedelivery.true.binominal.attribute"/>
+          <parameter key="10" value="Isdeliveringnow.true.binominal.attribute"/>
+          <parameter key="11" value="Switchtoordermenu.true.binominal.attribute"/>
+          <parameter key="12" value="Pricerange.true.integer.attribute"/>
+          <parameter key="13" value="Aggregaterating.true.real.attribute"/>
+          <parameter key="14" value="Ratingcolor.true.polynominal.attribute"/>
+          <parameter key="15" value="Ratingtext.true.polynominal.attribute"/>
+          <parameter key="16" value="Votes.true.integer.attribute"/>
+          <parameter key="17" value="French.true.integer.attribute"/>
+          <parameter key="18" value="Japanese.true.integer.attribute"/>
+          <parameter key="19" value="Seafood.true.integer.attribute"/>
+          <parameter key="20" value="Chinese.true.integer.attribute"/>
+          <parameter key="21" value="Asian.true.integer.attribute"/>
+          <parameter key="22" value="European.true.integer.attribute"/>
+          <parameter key="23" value="Filipino.true.integer.attribute"/>
+          <parameter key="24" value="American.true.integer.attribute"/>
+          <parameter key="25" value="Korean.true.integer.attribute"/>
+          <parameter key="26" value="Cafe.true.integer.attribute"/>
+          <parameter key="27" value="Italian.true.integer.attribute"/>
+          <parameter key="28" value="FastFood.true.integer.attribute"/>
+          <parameter key="29" value="Bakery.true.integer.attribute"/>
+          <parameter key="30" value="Brazilian.true.integer.attribute"/>
+          <parameter key="31" value="Pizza.true.integer.attribute"/>
+          <parameter key="32" value="Arabian.true.integer.attribute"/>
+          <parameter key="33" value="BarFood.true.integer.attribute"/>
+          <parameter key="34" value="Mexican.true.integer.attribute"/>
+          <parameter key="35" value="International.true.integer.attribute"/>
+          <parameter key="36" value="Peruvian.true.integer.attribute"/>
+          <parameter key="37" value="Desserts.true.integer.attribute"/>
+          <parameter key="38" value="Juices.true.integer.attribute"/>
+          <parameter key="39" value="Beverages.true.integer.attribute"/>
+          <parameter key="40" value="Lebanese.true.integer.attribute"/>
+          <parameter key="41" value="Burger.true.integer.attribute"/>
+          <parameter key="42" value="Steak.true.integer.attribute"/>
+          <parameter key="43" value="Indian.true.integer.attribute"/>
+          <parameter key="44" value="Sushi.true.integer.attribute"/>
+          <parameter key="45" value="BBQ.true.integer.attribute"/>
+          <parameter key="46" value="GourmetFastFood.true.integer.attribute"/>
+          <parameter key="47" value="CoffeeandTea.true.integer.attribute"/>
+          <parameter key="48" value="Southern.true.integer.attribute"/>
+          <parameter key="49" value="Breakfast.true.integer.attribute"/>
+          <parameter key="50" value="Sandwich.true.integer.attribute"/>
+          <parameter key="51" value="German.true.integer.attribute"/>
+          <parameter key="52" value="Vietnamese.true.integer.attribute"/>
+          <parameter key="53" value="Thai.true.integer.attribute"/>
+          <parameter key="54" value="ModernAustralian.true.integer.attribute"/>
+          <parameter key="55" value="LatinAmerican.true.integer.attribute"/>
+          <parameter key="56" value="Mediterranean.true.integer.attribute"/>
+          <parameter key="57" value="Tea.true.integer.attribute"/>
+          <parameter key="58" value="Greek.true.integer.attribute"/>
+          <parameter key="59" value="Spanish.true.integer.attribute"/>
+          <parameter key="60" value="Hawaiian.true.integer.attribute"/>
+          <parameter key="61" value="Irish.true.integer.attribute"/>
+          <parameter key="62" value="NewAmerican.true.integer.attribute"/>
+          <parameter key="63" value="Caribbean.true.integer.attribute"/>
+          <parameter key="64" value="Cajun.true.integer.attribute"/>
+          <parameter key="65" value="PubFood.true.integer.attribute"/>
+          <parameter key="66" value="Tapas.true.integer.attribute"/>
+          <parameter key="67" value="Singaporean.true.integer.attribute"/>
+          <parameter key="68" value="Western.true.integer.attribute"/>
+          <parameter key="69" value="FingerFood.true.integer.attribute"/>
+          <parameter key="70" value="British.true.integer.attribute"/>
+          <parameter key="71" value="Cuban.true.integer.attribute"/>
+          <parameter key="72" value="Australian.true.integer.attribute"/>
+          <parameter key="73" value="Turkish.true.integer.attribute"/>
+          <parameter key="74" value="Pakistani.true.integer.attribute"/>
+          <parameter key="75" value="Continental.true.integer.attribute"/>
+          <parameter key="76" value="Goan.true.integer.attribute"/>
+          <parameter key="77" value="SouthIndian.true.integer.attribute"/>
+          <parameter key="78" value="African.true.integer.attribute"/>
+          <parameter key="79" value="NorthIndian.true.integer.attribute"/>
+          <parameter key="80" value="Rajasthani.true.integer.attribute"/>
+          <parameter key="81" value="Mughlai.true.integer.attribute"/>
+          <parameter key="82" value="IceCream.true.integer.attribute"/>
+          <parameter key="83" value="StreetFood.true.integer.attribute"/>
+          <parameter key="84" value="Mithai.true.integer.attribute"/>
+          <parameter key="85" value="Maharashtrian.true.integer.attribute"/>
+          <parameter key="86" value="ModernIndian.true.integer.attribute"/>
+          <parameter key="87" value="Biryani.true.integer.attribute"/>
+          <parameter key="88" value="Parsi.true.integer.attribute"/>
+          <parameter key="89" value="RawMeats.true.integer.attribute"/>
+          <parameter key="90" value="Kashmiri.true.integer.attribute"/>
+          <parameter key="91" value="SouthAmerican.true.integer.attribute"/>
+          <parameter key="92" value="Persian.true.integer.attribute"/>
+          <parameter key="93" value="Bengali.true.integer.attribute"/>
+          <parameter key="94" value="HealthyFood.true.integer.attribute"/>
+          <parameter key="95" value="Portuguese.true.integer.attribute"/>
+          <parameter key="96" value="Burmese.true.integer.attribute"/>
+          <parameter key="97" value="Awadhi.true.integer.attribute"/>
+          <parameter key="98" value="Tibetan.true.integer.attribute"/>
+          <parameter key="99" value="DrinksOnly.true.integer.attribute"/>
+          <parameter key="100" value="Lucknowi.true.integer.attribute"/>
+          <parameter key="101" value="Gujarati.true.integer.attribute"/>
+          <parameter key="102" value="NorthEastern.true.integer.attribute"/>
+          <parameter key="103" value="Oriya.true.integer.attribute"/>
+          <parameter key="104" value="Hyderabadi.true.integer.attribute"/>
+          <parameter key="105" value="Bihari.true.integer.attribute"/>
+          <parameter key="106" value="Afghani.true.integer.attribute"/>
+          <parameter key="107" value="Kerala.true.integer.attribute"/>
+          <parameter key="108" value="Tex-Mex.true.integer.attribute"/>
+          <parameter key="109" value="Andhra.true.integer.attribute"/>
+          <parameter key="110" value="Malwani.true.integer.attribute"/>
+          <parameter key="111" value="Malaysian.true.integer.attribute"/>
+          <parameter key="112" value="Assamese.true.integer.attribute"/>
+          <parameter key="113" value="MiddleEastern.true.integer.attribute"/>
+          <parameter key="114" value="Nepalese.true.integer.attribute"/>
+          <parameter key="115" value="Naga.true.integer.attribute"/>
+          <parameter key="116" value="Salad.true.integer.attribute"/>
+          <parameter key="117" value="CharcoalGrill.true.integer.attribute"/>
+          <parameter key="118" value="Peranakan.true.integer.attribute"/>
+          <parameter key="119" value="Sunda.true.integer.attribute"/>
+          <parameter key="120" value="Indonesian.true.integer.attribute"/>
+          <parameter key="121" value="AsianFusion.true.integer.attribute"/>
+          <parameter key="122" value="Taiwanese.true.integer.attribute"/>
+          <parameter key="123" value="Kiwi.true.integer.attribute"/>
+          <parameter key="124" value="Contemporary.true.integer.attribute"/>
+          <parameter key="125" value="Scottish.true.integer.attribute"/>
+          <parameter key="126" value="Ramen.true.integer.attribute"/>
+          <parameter key="127" value="Argentine.true.integer.attribute"/>
+          <parameter key="128" value="Grill.true.integer.attribute"/>
+          <parameter key="129" value="SriLankan.true.integer.attribute"/>
+          <parameter key="130" value="Kebab.true.integer.attribute"/>
+          <parameter key="131" value="Patisserie.true.integer.attribute"/>
+          <parameter key="132" value="WorldCuisine.true.integer.attribute"/>
+          <parameter key="133" value="TurkishPizza.true.integer.attribute"/>
+          <parameter key="134" value="RestaurantCafe.true.integer.attribute"/>
+          <parameter key="135" value="Mineira.true.integer.attribute"/>
+          <parameter key="136" value="Southwestern.true.integer.attribute"/>
+          <parameter key="137" value="Diner.true.integer.attribute"/>
+          <parameter key="138" value="Canadian.true.integer.attribute"/>
+          <parameter key="139" value="Vegetarian.true.integer.attribute"/>
+          <parameter key="140" value="Fusion.true.integer.attribute"/>
+          <parameter key="141" value="Deli.true.integer.attribute"/>
+          <parameter key="142" value="Chettinad.true.integer.attribute"/>
+          <parameter key="143" value="Belgian.true.integer.attribute"/>
+          <parameter key="144" value="Iranian.true.integer.attribute"/>
+          <parameter key="145" value="Mangalorean.true.integer.attribute"/>
+          <parameter key="146" value="FishandChips.true.integer.attribute"/>
+          <parameter key="147" value="DimSum.true.integer.attribute"/>
+          <parameter key="148" value="Curry.true.integer.attribute"/>
+          <parameter key="149" value="SouthAfrican.true.integer.attribute"/>
+          <parameter key="150" value="Izgara.true.integer.attribute"/>
+          <parameter key="151" value="B_rek.true.integer.attribute"/>
+          <parameter key="152" value="Teriyaki.true.integer.attribute"/>
+          <parameter key="153" value="SoulFood.true.integer.attribute"/>
+          <parameter key="154" value="Cantonese.true.integer.attribute"/>
+          <parameter key="155" value="Moroccan.true.integer.attribute"/>
+          <parameter key="156" value="Armenian.true.integer.attribute"/>
+          <parameter key="157" value="Durban.true.integer.attribute"/>
+          <parameter key="158" value="D_ner.true.integer.attribute"/>
+          <parameter key="159" value="Bubble Tea.true.integer.attribute"/>
+          <parameter key="160" value="Malay.true.integer.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="true"/>
+        <parameter key="datamanagement" value="double_array"/>
+        <parameter key="data_management" value="auto"/>
+      </operator>
+      <operator activated="true" class="store" compatibility="8.2.001" expanded="true" height="68" name="Store" width="90" x="179" y="136">
+        <parameter key="repository_entry" value="../data/Zomato original Data"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Store" to_port="input"/>
+      <connect from_op="Store" from_port="through" to_port="result 1"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+    </process>
+  </operator>
+</process>
