@@ -25,7 +25,7 @@ or conda:
 For the virtual environment you can use anaconda virtual environment or your choice.
 
 
-##Results
+## Results
 
 The recommendation from the K-Means clustering using the Cosine and Euclidean
 similarity was unsatisfactory.
@@ -37,7 +37,7 @@ required recommendations.
 returned satisfactory results. Also, the results remained unchanged when the classifier was
 changed (Decision trees, Naïve Bayes, SVM and KNN).
 
-##Conclusion
+## Conclusion
    In the above analysis, out of all the approaches tried, the best recommendations were
 made by the DBSCAN clustering technique filtered using the Manhattan distance, with a few
 deviations.
